@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fleet Sifu — Your fleet, finally followed up</title>
+  <meta name="description" content="Fleet Sifu turns vehicle events into owned, auditable follow-up for Caribbean and multi-tenant fleet managers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-card: #121a2b;
+      --text: #eef2ff;
+      --muted: #9aa8c7;
+      --accent: #3dd6c6;
+      --accent-2: #5b8cff;
+      --line: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body {
+      font-family: "DM Sans", system-ui, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(91,140,255,0.25), transparent 55%),
+        radial-gradient(900px 500px at 90% 0%, rgba(61,214,198,0.18), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+    }
+    .mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 2.5rem;
+    }
+    .mark span.dot {
+      width: 0.7rem; height: 0.7rem; border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 18px rgba(61,214,198,0.55);
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.15;
+      font-weight: 700;
+      margin: 0 0 1rem;
+      letter-spacing: -0.02em;
+    }
+    .promise {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin: 0 0 1.75rem;
+      max-width: 36rem;
+    }
+    .promise strong { color: var(--text); font-weight: 600; }
+    .card {
+      background: color-mix(in srgb, var(--bg-card) 88%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .card p { margin: 0; color: var(--muted); font-size: 0.98rem; }
+    .card p + p { margin-top: 0.65rem; }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--accent), #2bb8aa);
+      color: #041018;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.85rem 1.25rem;
+      border-radius: 999px;
+      margin-top: 0.25rem;
+    }
+    .cta:hover { filter: brightness(1.05); }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="mark"><span class="dot" aria-hidden="true"></span> Fleet Sifu</div>
+    <h1>Your fleet, finally followed up.</h1>
+    <p class="promise">
+      <strong>Fleet Sifu turns vehicle events into owned, auditable follow-up</strong> —
+      so by mid-morning the manager sees closed loops, not an alert firehose.
+    </p>
+    <div class="card">
+      <p>Built for <strong style="color:var(--text)">Caribbean and multi-tenant fleet managers</strong>, starting with design partner A1.</p>
+      <p>AI playbooks with durable workflow IDs and human gates — not another telematics firehose.</p>
+    </div>
+    <a class="cta" href="mailto:hello@fleetcifu.ai">Contact us → hello@fleetcifu.ai</a>
+    <footer>
+      © <span id="y"></span> Fleet Sifu · fleetcifu.ai · Early presence — product at fleetroshi.ai during transition
+    </footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
